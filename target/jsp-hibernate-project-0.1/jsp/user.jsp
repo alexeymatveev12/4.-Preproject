@@ -58,7 +58,7 @@
         <input type="submit" value="Create the New User" />
     </form>
 
-    <form action="/read">
+    <form action="/admin">
         <input type="submit" value="Read User's List" />
     </form>
 

@@ -42,7 +42,7 @@ public class UpdateServlet extends HttpServlet {
         User updatedUser = new User(reqId, nameUser, loginUser, passwordUser, role);
         //  if ( nameUser != null && loginUser!= null &&  passwordUser !=null)
         userService.updateUser(updatedUser);
-        resp.sendRedirect("read");;
+        resp.sendRedirect("admin");;
 
     }
 

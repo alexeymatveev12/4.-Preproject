@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/read")
+@WebServlet("/admin")
 public class ReadServlet extends HttpServlet {
 
     UserService userService = UserService.getInstance();

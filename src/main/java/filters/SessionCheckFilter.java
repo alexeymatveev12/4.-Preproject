@@ -74,11 +74,11 @@ public class SessionCheckFilter implements Filter {
         System.out.println("print user from session filter - userTryLogin : " + userLogOn);
         String userRole = userLogOn.getRole();
 
-        //перенаправляем на ReadServlet
+        //redirect на ReadServlet
         if (userRole.equals("admin")) {
             fc.doFilter(req, resp);
         }
-        //перенаправляем на UserServlet
+        //redirect на UserServlet
         else if (userRole.equals("user")) {
             req.setAttribute("userLogOn", userLogOn);
 

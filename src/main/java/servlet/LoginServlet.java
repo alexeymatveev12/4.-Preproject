@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getServletContext()
-                .getRequestDispatcher("index.jsp")
+                .getRequestDispatcher("/index.jsp")
                 .forward(req, resp);
     }
 
@@ -43,8 +43,8 @@ public class LoginServlet extends HttpServlet {
         // почему в сессию??
 
         session.setAttribute("userTryLogin", userTryLogin);
-
-        resp.sendRedirect("read");
+        resp.sendRedirect("admin");
+    //    resp.sendRedirect("read");
      //   resp.sendRedirect("user");
         }
     }

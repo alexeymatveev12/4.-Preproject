@@ -48,7 +48,7 @@ public class CreateServlet extends HttpServlet {
       //  if (
                 userService.addUser(newUser);
     //    {
-            resp.sendRedirect("read");;
+            resp.sendRedirect("admin");;
      //   } else {
    //         resp.getWriter().println("Client not add");
    //     }

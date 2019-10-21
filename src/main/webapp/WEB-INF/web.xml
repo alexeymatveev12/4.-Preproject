@@ -24,7 +24,7 @@
 
 
         <url-pattern>/create</url-pattern>
-        <url-pattern>/read</url-pattern>
+        <url-pattern>/admin</url-pattern>
         <url-pattern>/delete</url-pattern>
         <url-pattern>/update</url-pattern>
     </filter-mapping>
